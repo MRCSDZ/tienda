@@ -1,0 +1,42 @@
+body{
+	background-color: #F0EFEF;
+	font-family: cursive;
+}
+
+.Product, .Client{
+	margin: 20px auto;
+  	width: 90%;
+}
+table{
+	border-collapse: collapse;
+  	border-spacing: 0;
+}
+
+thead{
+	background-color: #174459;
+	color: white;
+	border-bottom: 2px solid black;
+}
+
+thead th, tbody td{
+	padding: 12px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.Product input, select, .Client input, select, .SelecProceso input{
+	padding: 3px;
+	margin-bottom: 5px
+}
+
+.guardar{
+	padding: 6px !important;
+	border-radius: 3px;
+	background-color: #174459;
+	color: white;
+	border: 0;
+}
+
+.SelecProceso input{
+	text-align: center;
+}
