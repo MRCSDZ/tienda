@@ -4,20 +4,6 @@ session_start();
 require("admin/instancia.txt");
 /******************  NO BORRAR  ******************/
 
-
-  require('Conexiones/BDctrlherramienta.php');
-    
-    $cantidad= $_POST['cantidadborrar']; //Dato del Hiddden
-    $mod=$_POST['mod']; //Dato del Hiddden
-    
-    $query="DELETE FROM herramienta
-                  WHERE modelo = '$mod' 
-                  LIMIT $cantidad";
-    
-    $resultado=$mysqli->query($query);
-    
-    
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,15 +11,14 @@ require("admin/instancia.txt");
 <head>
     
     <link rel="shortcut icon" type="image/png" href="/imagenes/favicon.png" />
-    
-    <META HTTP-EQUIV="REFRESH" CONTENT="2;URL=ConsultarHerramienta.php">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SISEH- Sistema de Control de Equipos y Herramientas</title>
+    <title>DISTC- Distribuidora de Chamoy</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -69,31 +54,16 @@ require("admin/instancia.txt");
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Mi Titulo</h1>
+                        <h1 class="page-header">Distribuidora de Chamoy</h1>
                     </div>
 
 
                     <div class="col-lg-12">
-                        <h1>Herramienta <small>Modificada</small></h1>
-                        </br>
-                        </br>
-                        Se borraron <?php echo $cantidad;?>
-                        <center>
-            
-                            <?php 
-                                if($resultado>0){
-                                ?>
-                                <h1>Baja Guardada</h1>
-                                
-                                    <?php   }else{ ?>
-                                
-                                <h1>Error al Modificar Herramienta</h1>
-                                
-                            <?php   } ?>
-                            
-                            <p></p>                             
-                        </center>
+                        
+                        <!-- AQUI EMPIEZA -->
                     </div>
+
+                    
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->

@@ -57,13 +57,13 @@
                             <ul class="nav nav-second-level">
             
                                 <li>
-                                    <a href="CartaCesion.php">Crear</a>
+                                    <a href="CrearPedido.php">Crear</a>
                                 </li>
                                 <li>
-                                    <a href="CartaCesion.php">Modificar</a>
+                                    <a href="ModificarPedido.php">Modificar</a>
                                 </li>
                                 <li>
-                                    <a href="MenuCartaES.php">Consultar</a>
+                                    <a href="ConsultarPedido.php">Consultar</a>
                                 </li>
                                 
                             </ul>
@@ -90,14 +90,34 @@
                             <!-- /.nav-second-level -->
                         </li>
 
+                        <li>
+                            <a href="#"><i class="fa fa-building-o"></i> Negocios<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="CrearCliente.php">Crear</a>
+                                </li>
+                                <li>
+                                    <a href="ModificarCliente.php">Modificar</a>
+                                </li>
+                                <li>
+                                    <a href="ConsultarCliente.php">Consultar</a>
+                                </li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
                          <li>
                             <a href="#"><i class="fa fa-group"></i> Clientes<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="Herramienta.php">Agregar</a>
+                                    <a href="CrearCliente.php">Crear</a>
                                 </li>
                                 <li>
-                                    <a href="AgregarHerramienta.php">Consultar</a>
+                                    <a href="ModificarCliente.php">Modificar</a>
+                                </li>
+                                <li>
+                                    <a href="ConsultarCliente.php">Consultar</a>
                                 </li>
                                 
                             </ul>
