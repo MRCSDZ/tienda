@@ -1,0 +1,13 @@
+<!--
+// EL PERMISO NIVEL 1 SON PARA PAGINAS QUE PUEDE VER TODOS LOS AUXILIARES ADMINISTRATIVOS
+// NOTA: EL ADMINISTRADOR DEBERA DE PODER VER TODOS LOS PERMISOS
+//PERMISOS:
+// 		Permiso 1 : Auxiliar administrativo, Jefes de Oficina y Administrador
+// 		Permiso 2 : Capturador, Jefes de Oficina y Administrador
+// 		Permiso 3 : Jefes de Oficina y Administrador
+//
+// NIVELES:
+// 		Nivel 1: Auxiliar Administrativo
+//		Nivel 2: Capturador
+//		Nivel 3: Jefe de Oficina
+//		Nivel 4: Administrador -->

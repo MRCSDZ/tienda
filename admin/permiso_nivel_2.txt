@@ -1,0 +1,9 @@
+<?php
+
+
+ if ($_SESSION['nivel_global'] == 1 )
+	{
+	    header("location: permiso.php");
+	}
+
+?>

@@ -1,21 +1,17 @@
-<?php
-
+<?php 
 session_start();
-if (isset($_SESSION["rpe_global"]))
-{
+require("admin/instancia.txt");
+require("admin/permiso_nivel_1.txt");
 
-    header("location: home.php");
 
-}
-
-else {
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    
+    <link rel="shortcut icon" type="image/png" href="/imagenes/favicon.png" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +19,7 @@ else {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>SISEH- Sistema de Control de Equipos y Herramientas</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -48,35 +44,35 @@ else {
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
+    <div id="wrapper">
 
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
+        <!-- NAVEGACION -->
+         <?php require('menu/menu.php'); ?>
+        <!-- NAVEGACION -->
 
-
-                        <h3 class="panel-title">Bienvenido a SISEH</h3>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Mi Titulo</h1>
                     </div>
-                    <div class="panel-body">
-                        <form action="redireccion.php" method="POST">
-                            <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control"  placeholder="RPE" name="rpe" type="text" autofocus>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Contraseña" name="pwd" type="password" value="">
-                                </div>
-                                
-                                <!-- Change this to a button or input when using this as a form -->
-                                 <input class="btn btn-lg btn-success btn-block" name="boton" type="submit" value="Ingresar">
-                            </fieldset>
-                        </form>
+
+
+                    <div class="col-lg-12">
+                        HOLA
+                        <!-- AQUI EMPIEZA -->
                     </div>
+                    <!-- /.col-lg-12 -->
                 </div>
+                <!-- /.row -->
             </div>
+            <!-- /.container-fluid -->
         </div>
+        <!-- /#page-wrapper -->
+
     </div>
+    <!-- /#wrapper -->
 
     <!-- jQuery -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -94,7 +90,3 @@ else {
 
 </html>
 
-<?php 
-
-}
-?>

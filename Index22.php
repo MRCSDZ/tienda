@@ -10,20 +10,88 @@ if (isset($_SESSION["rpe_global"]))
 
 else {
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
+    <style>
+    div#diferente{
+
+    margin-top: 111px;
+    margin-left: 91px;
+
+
+    }
+
+
+    #diferente >img{
+    
+    display: block;
+    margin-bottom: 25px;
+
+
+    
+    }
+    #diferente > span#titulo
+    {
+
+    position: relative;
+    margin-top: 20px;
+    font-family: helvetica;
+    font-size: 40px;
+    color: white;
+
+
+    }
+
+     #diferente > span#subtitulo
+    {
+
+    position: relative;
+    display: block;
+     font-family: helvetica;
+    font-size: 20px;
+    color: gray;
+
+    }
+
+    #diferente > div.col-md-4.col-md-offset-4
+    {
+
+    position: relative;
+    display: block;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    margin-top: -160px;
+    width: 76%;
+    }
+
+    #diferente > div.col-md-4.col-md-offset-4 > div.login-panel.panel.panel-default
+    {
+
+        background-color: transparent;
+        border-color: transparent;
+
+    }
+
+
+    #diferente > div.col-md-4.col-md-offset-4 > div.login-panel.panel.panel-default >div.panel-heading
+    {
+
+      background-color: transparent; 
+      border-color: transparent; 
+}
+
+    }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>SISEH- Sistema de Control de Equipos y Herramientas</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,35 +114,45 @@ else {
 
 </head>
 
-<body>
+<body background="Imagenes/fondo.png">
+    
+   
 
     <div class="container">
         <div class="row">
+            <div id="diferente">
+            <img src="imagenes/cfeintro.png" alt="">
+            <span id="titulo">Sistema de control de equipos y herramientas </span>
+                
+            <span id="subtitulo">ISC Oriente</span>
             <div class="col-md-4 col-md-offset-4">
 
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-
-
-                        <h3 class="panel-title">Bienvenido a SISEH</h3>
+                        <h3 class="panel-title">Favor de Iniciar Sesion :)</h3>
                     </div>
                     <div class="panel-body">
-                        <form action="redireccion.php" method="POST">
+                        <form role="form" action="redireccion.php" method="POST">
                             <fieldset>
+                               
+
+
                                 <div class="form-group">
-                                    <input class="form-control"  placeholder="RPE" name="rpe" type="text" autofocus>
+                                    <input class="form-control" id="1" placeholder="RPE" name="rpe" type="text"  required>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Contraseña" name="pwd" type="password" value="">
+                                    <input class="form-control" id="2" placeholder="Contraseña" name="pwd" type="password" required>
                                 </div>
                                 
                                 <!-- Change this to a button or input when using this as a form -->
-                                 <input class="btn btn-lg btn-success btn-block" name="boton" type="submit" value="Ingresar">
+                                 <input class="form-control" name="boton" type="submit" >
+                            
                             </fieldset>
                         </form>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 
