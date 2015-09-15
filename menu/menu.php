@@ -7,7 +7,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php"><img src="imagenes/cfelogo.png" width="160"> </a>
+                <a class="navbar-brand" href="home.php">DISTC </a>
 
             </div>
             <!-- /.navbar-header -->
@@ -53,19 +53,15 @@
 
 
                         <li>
-                            <a href="#"><i class="fa fa-bookmark"></i> Cursos<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-truck"></i> Pedidos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
             
-                                <li>
-                                    <a href="CartaCesion.php">Panel</a>
-                                </li>
                                 <li>
                                     <a href="CartaCesion.php">Crear</a>
                                 </li>
                                 <li>
-                                    <a href="MenuCartaES.php">Modificar</a>
+                                    <a href="CartaCesion.php">Modificar</a>
                                 </li>
-
                                 <li>
                                     <a href="MenuCartaES.php">Consultar</a>
                                 </li>
@@ -75,11 +71,9 @@
                         </li>
 
                          <li>
-                            <a href="#"><i class="fa fa-user-md"></i> TUMS<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-cubes"></i> Productos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="Transformador.php">Panel</a>
-                                </li>
+                                
                                 <li>
                                     <a href="TransformadorIntegradoDeMedicion.php">Agregar</a>
                                 </li>
@@ -97,17 +91,15 @@
                         </li>
 
                          <li>
-                            <a href="#"><i class="fa fa-ambulance"></i> Ambulancias<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-group"></i> Clientes<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="Herramienta.php">Panel</a>
+                                    <a href="Herramienta.php">Agregar</a>
                                 </li>
                                 <li>
-                                    <a href="AgregarHerramienta.php">Agregar</a>
+                                    <a href="AgregarHerramienta.php">Consultar</a>
                                 </li>
-                                <li>
-                                    <a href="ConsultarHerramienta.php">Ver</a>
-                                </li>
+                                
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -116,7 +108,7 @@
                          
 
                         <li>
-                            <a href="#"><i class="fa fa-group"></i> Usuarios<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-user"></i> Usuarios<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="AgregarUsuario.php">Agregar</a>
@@ -129,18 +121,6 @@
                             <!-- /.nav-second-level -->
                         </li>
 
-                        <li>
-                            <a href="#"><i class="fa fa-question-circle fa-fw"></i> Ayuda<span class="fa arrow"></span></a>
-                            
-                            <!-- /.nav-second-level -->
-                        </li>
-
-
-                        <li>
-                            <a href="#"><i class="fa fa- fa-link fa-fw "></i> Enlaces<span class="fa arrow"></span></a>
-                            
-                            <!-- /.nav-second-level -->
-                        </li>
 
 
             

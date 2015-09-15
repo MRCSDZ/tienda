@@ -18,7 +18,7 @@ require("admin/instancia.txt");
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>COEPRA- Plataforma del Centro Regulador de Urgencias Medicas</title>
+    <title>DISTC- Distribuidora de Chamoy</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@ require("admin/instancia.txt");
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Plataforma Centro Regulador de Urgencias Medicas</h1>
+                        <h1 class="page-header">Distribuidora de Chamoy</h1>
                     </div>
 
 
@@ -70,11 +70,11 @@ require("admin/instancia.txt");
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-3">
-                                            <i class="fa fa-bookmark fa-5x"></i>
+                                            <i class="fa fa-truck fa-5x"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
                                             <div class="huge">34</div>
-                                            <div>Cursos <br>Activos</br></div>
+                                            <div>Pedidos <br>Hechos</br></div>
                                         </div>
                                     </div>
                                 </div>
@@ -96,11 +96,11 @@ require("admin/instancia.txt");
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-3">
-                                            <i class="fa fa-group fa-5x"></i>
+                                            <i class="fa fa-cubes fa-5x"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
                                             <div class="huge">23</div>
-                                            <div>Usuarios Registrados</div>
+                                            <div>Cajas<br>Chamoy <b>Galon</b></div>
                                         </div>
                                     </div>
                                 </div>
@@ -122,11 +122,11 @@ require("admin/instancia.txt");
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-3">
-                                            <i class="fa fa-user-md fa-5x"></i>
+                                            <i class="fa fa-cubes fa-5x"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
                                             <div class="huge">103</div>
-                                            <div>TUMBS Registrados</div>
+                                            <div>Cajas<br>Chamoy <b>Litro</b></div>
                                         </div>
                                     </div>
                                 </div>
@@ -148,11 +148,11 @@ require("admin/instancia.txt");
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-3">
-                                            <i class="fa fa-ambulance fa-5x"></i>
+                                            <i class="fa fa-cubes fa-5x"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
                                             <div class="huge">23</div>
-                                            <div>Ambulancias Registradas</div>
+                                            <div>Cajas<br>Chamoy <b>355ml</b></div>
                                         </div>
                                     </div>
                                 </div>
