@@ -96,9 +96,7 @@
                                 <li>
                                     <a href="CrearNegocio.php">Crear</a>
                                 </li>
-                                <li>
-                                    <a href="ModificarNegocio.php">Modificar</a>
-                                </li>
+                                
                                 <li>
                                     <a href="ConsultarNegocio.php">Consultar</a>
                                 </li>
@@ -113,9 +111,7 @@
                                 <li>
                                     <a href="CrearCliente.php">Crear</a>
                                 </li>
-                                <li>
-                                    <a href="ModificarCliente.php">Modificar</a>
-                                </li>
+                                
                                 <li>
                                     <a href="ConsultarCliente.php">Consultar</a>
                                 </li>
