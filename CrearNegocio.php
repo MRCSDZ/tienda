@@ -61,7 +61,7 @@ require("admin/instancia.txt");
                     <div class="col-lg-6">
                         <form action="GuardaNegocio.php" method="POST">
                         
-                            <b>Nombre del negocio:</b> <input type="text" name="negocio" class="form-control" placeholder="Mi Empresa SA. de CV." Required> <br>
+                            <b>Nombre del negocio:</b> <input type="text" name="nombre" class="form-control" placeholder="Mi Empresa SA. de CV." Required> <br>
                             <b>RFC:</b> <input type="text" name="rfc" class="form-control" placeholder="RFCXXXXXXXXX"><br>
                             <b>Direccion</b><br>
                             Calle: <input type="text" name="calle" class="form-control" placeholder="Ingrese su calle" required> <br>

@@ -14,18 +14,18 @@ require('Conexiones/conexion.php');
     $ciudad  =   $_POST["ciudad"];
 
     $query=" INSERT INTO negocio(nombre,
-                                rfc,
-                                colonia,
-                                calle, 
-                                numero, 
-                                ciudad
+                                 rfc,
+                                 colonia,
+                                 calle, 
+                                 numero, 
+                                 ciudad
                                 )
                         
                 VALUES ('$nombre',
                         '$rfc',
+                        '$colonia',
                         '$calle',
                         '$numero',
-                        '$colonia',
                         '$ciudad'
                         )";
                         
@@ -86,7 +86,21 @@ require('Conexiones/conexion.php');
 
                     <div class="col-lg-12">
                         
-                        <!-- AQUI EMPIEZA -->
+                         <?php if($resultado>0){ ?>
+                                <h3>Negocio Guardado</h3>
+                                <?php
+                                    
+                                    
+                                ?>
+
+                
+                                <?php }else{ ?>
+                                <h1>Error al Guardar el Equipo</h1>     
+                                <?php   } ?>        
+                                <p></p> 
+                                <a href="AgregarEquipo.php">Regresar</a>
+                            </center>
+                            
                     </div>
 
                     
