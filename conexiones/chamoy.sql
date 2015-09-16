@@ -6,6 +6,7 @@
 -- Tiempo de generación: 16-09-2015 a las 05:54:18
 -- Versión del servidor: 5.6.24
 -- Versión de PHP: 5.6.8
+-- Marcos Diaz
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";

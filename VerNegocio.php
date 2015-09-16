@@ -12,12 +12,13 @@ require('Conexiones/conexion.php');
     $resultado=$mysqli->query($query);
     $row=$resultado->fetch_assoc();
     
-    /*
+   
     //Consulta Telefonos del Negocio
-    $query= "SELECT * FROM negocio";
+    $query2= "SELECT telefono, ext, idtelefononegocio FROM telefononegocio INNER JOIN negocio ON negocio.idnegocio = telefononegocio.idnegocio_fk  ";
   
-    $resultado=$mysqli->query($query);
+    $resultado2=$mysqli->query($query2);
 
+    /*
     //Consulta Clientes Asociados al Negocio
     $query= "SELECT * FROM negocio";
 
@@ -92,8 +93,8 @@ require('Conexiones/conexion.php');
                                         <i class="fa fa-truck fa-5x"></i>
                                     </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>Cantridad de Facturas Realizadas</div>
+                                    <div class="huge">0</div>
+                                    <div>Cantidad de Facturas Realizadas</div>
                                 </div>
                             </div>
                         </div>   
@@ -108,8 +109,11 @@ require('Conexiones/conexion.php');
                                 Informacion General Empresa
                             </div>
                             <div class="panel-body">
+                                <a href="ModificarNegocio.php?id=<?php echo $row['idnegocio'];?>"> <p class="fa fa-minus-circle"></p> Modificar Datos</a> <br>
                                 <?php 
-                                    echo "Nombre de la empresa: ".$row["nombre"];
+                                    echo "<b>Nombre de la empresa: </b>".$row["nombre"]."<br>";
+                                    echo "<b>Direccion: </b>".$row["calle"]." ".$row["colonia"]." ".$row["numero"]."<br>";
+                                    echo "<b>Ciudad: </b>".$row["ciudad"]."<br>";
                                  ?>
                             </div>
                         
@@ -122,7 +126,29 @@ require('Conexiones/conexion.php');
                                 Telefonos de la Empresa
                             </div>
                             <div class="panel-body">
-                                + Agregar Telefono
+                                <a href="AgregarTelefono.php?id=<?php echo $row['idnegocio'];?>"> <p class="fa fa-plus-circle"></p> Agregar Telefono</a>
+                                <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Numero</th>
+                                            <th>Ext.</th>
+                                            <th>Modificar/Eliminar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php while($row2=$resultado2->fetch_assoc()){ ?>
+                                        <tr>
+                                            <td><?php echo $row2['telefono'];?></td>
+                                            <td><?php echo $row2['ext'];?></td>
+                                            <td>  <a href="ModificarTelefono.php?id=<?php echo $row2['idtelefononegocio'];?>"> Modificar</a> </td>
+
+                                        </tr>
+                                    <?php } ?>     
+                                    </tbody>
+                                </table>
+                            </div>
+
                                 
                             </div>
                                 
