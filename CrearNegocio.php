@@ -54,13 +54,34 @@ require("admin/instancia.txt");
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Distribuidora de Chamoy</h1>
+                        <h1 class="page-header">Negocio Nuevo</h1>
                     </div>
 
 
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
+                        <form action="GuardaNegocio.php" method="POST">
                         
-                        <!-- AQUI EMPIEZA -->
+                            <b>Nombre del negocio:</b> <input type="text" name="negocio" class="form-control" placeholder="Mi Empresa SA. de CV." Required> <br>
+                            <b>RFC:</b> <input type="text" name="rfc" class="form-control" placeholder="RFCXXXXXXXXX"><br>
+                            <b>Direccion</b><br>
+                            Calle: <input type="text" name="calle" class="form-control" placeholder="Ingrese su calle" required> <br>
+                            Numero: <input type="text" name="numero" class="form-control" placeholder="Ej. 10500 o 3100-A" required><br>
+                            Colonia:  <input type="text" name="colonia" class="form-control" placeholder="Ingrese su colonia" required> <br>
+                            Ciudad: <select name="ciudad" id="" class="form-control"> 
+                                        <option value="tijuana">Tijuana</option> 
+                                        <option value="mexicali">Mexicali</option> 
+                                        <option value="ensenada">Ensenada</option> 
+                                        <option value="rosarito">Rosarito</option>
+                                        <option value="tecate">Tecate</option>
+                                    </select>
+                            <br>
+                            <input type="submit" value="Registrar Negocio" class="btn btn-default">
+                            <br>
+                            <br>
+                            <br>
+                        </form>
+
+
                     </div>
 
                     <div class="col-lg-12">

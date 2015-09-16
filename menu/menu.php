@@ -94,13 +94,13 @@
                             <a href="#"><i class="fa fa-building-o"></i> Negocios<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="CrearCliente.php">Crear</a>
+                                    <a href="CrearNegocio.php">Crear</a>
                                 </li>
                                 <li>
-                                    <a href="ModificarCliente.php">Modificar</a>
+                                    <a href="ModificarNegocio.php">Modificar</a>
                                 </li>
                                 <li>
-                                    <a href="ConsultarCliente.php">Consultar</a>
+                                    <a href="ConsultarNegocio.php">Consultar</a>
                                 </li>
                                 
                             </ul>
